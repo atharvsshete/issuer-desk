@@ -3,10 +3,10 @@ import csv
 import json
 import re
 from pathlib import Path
-from model import predicts_issuer
-from amendments import ORIGINAL, REVISIONS, compare
+from app.model import predicts_issuer
+from app.amendments import ORIGINAL, REVISIONS, compare
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 A, B, T = "Alder Funding LLC", "Alder Holdings Inc", "Vale Trust Co"
 MASTER = {A:"E01", B:"E02", T:"E03"}
 # Fixture ID, source lines for one synthetic note, expected issuer (None means unresolved).
@@ -47,7 +47,7 @@ def classify(lines, assisted, directory=MASTER):
 
 def main():
     payload=[]
-    with (ROOT/"results.csv").open("w",newline="",encoding="utf8") as f:
+    with (ROOT/"results"/"results.csv").open("w",newline="",encoding="utf8") as f:
         w=csv.writer(f);w.writerow(["case","expected","baseline","local_model_assisted"])
         for case,lines,truth in CASES:
             routes=[classify(lines,assisted) for assisted in [False,True]]
@@ -55,7 +55,7 @@ def main():
             payload.append(dict(case=case,lines=lines,routes=routes))
     revisions = [dict(v, decision=compare(ORIGINAL, v, classify, MASTER)) for v in REVISIONS]
     data=json.dumps(dict(cases=payload,entities=MASTER,original=ORIGINAL,revisions=revisions)).replace("<","\\u003c")
-    (ROOT/"review.html").write_text((ROOT/"template.html").read_text(encoding="utf8").replace("/*DATA*/",data),encoding="utf8")
+    (ROOT/"review.html").write_text((ROOT/"web"/"template.html").read_text(encoding="utf8").replace("/*DATA*/",data),encoding="utf8")
     for assisted in [False,True]:
         picks=[(classify(lines,assisted)[0],truth) for _,lines,truth in CASES]
         print("assisted",assisted,"correct candidates",sum(p==t and p is not None for p,t in picks),"wrong candidates",sum(p is not None and p!=t for p,t in picks),"holds",sum(p is None for p,t in picks))

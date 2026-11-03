@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="description" content="Offline synthetic bond issuer review and amendment comparison"><title>Issuer desk | Bond reference review</title><link rel="stylesheet" href="desk.css"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="description" content="Offline synthetic bond issuer review and amendment comparison"><title>Issuer desk | Bond reference review</title><link rel="stylesheet" href="web/desk.css"></head>
 <body><header class="mast"><div class="wrap mast-row"><b class="brand"><i aria-hidden="true"></i>Issuer desk</b><span class="demo-tag">Local demo</span></div></header>
 <main class="wrap"><div class="intro" id="review"><h1>Bond issuer review</h1><p>Check the legal name against the offering terms before confirming the link.</p></div>
 <nav aria-label="Workspace sections"><a href="#review">Review a note</a><a href="#compare" aria-label="Compare a filing with an amendment">Compare amendments</a></nav>
@@ -22,4 +22,4 @@ el("reason").textContent=active?"Directory "+last.id+" · source lines "+last.li
 el("confirm").disabled=active||!r[0];el("undo").disabled=!active;
 el("audit").replaceChildren(...history.map(e=>{const li=document.createElement("li");li.textContent=[e.at,e.action,e.name,e.id,"lines "+e.lines.join(", "),e.method].join(" · ");return li}))}
 function save(action){const {c,r,history}=state();const previous=history.at(-1);const e=action==="Reopened"?{...previous}:{case:c.case,name:r[0],id:entities[r[0]],lines:r[1],method:el("route").selectedOptions[0].text};events.push({...e,action,at:new Date().toISOString()});localStorage.setItem(key,JSON.stringify(events));paint()}
-el("case").onchange=el("route").onchange=paint;el("confirm").onclick=()=>save("Confirmed");el("undo").onclick=()=>save("Reopened");paint();</script><script src="amendment-view.js"></script></html>
+el("case").onchange=el("route").onchange=paint;el("confirm").onclick=()=>save("Confirmed");el("undo").onclick=()=>save("Reopened");paint();</script><script src="web/amendment-view.js"></script></html>

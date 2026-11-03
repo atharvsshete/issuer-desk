@@ -3,9 +3,9 @@ import csv
 import json
 import re
 from pathlib import Path
-from demo import classify
+from app.demo import classify
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 DIRECTORY = ("Barclays Bank PLC", "Barclays Capital Inc.", "BofA Finance LLC",
              "Bank of America Corporation", "Nomura America Finance, LLC",
              "The Goldman Sachs Group, Inc.")
@@ -21,8 +21,8 @@ def phrases(line, baseline):
     return name if re.search(pattern, line, re.I) else None
 
 def main():
-    cases = json.loads((ROOT/"public-excerpts.json").read_text(encoding="utf8"))
-    with (ROOT/"public-results.csv").open("w",newline="",encoding="utf8") as f:
+    cases = json.loads((ROOT/"data"/"public-excerpts.json").read_text(encoding="utf8"))
+    with (ROOT/"results"/"public-results.csv").open("w",newline="",encoding="utf8") as f:
         writer=csv.writer(f)
         methods=["exact","phrase","model_assisted"]
         writer.writerow(["case","expected",*methods])

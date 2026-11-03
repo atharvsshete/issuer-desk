@@ -1,13 +1,13 @@
 """Replay the frozen label rules on new issuers, then probe the first-row assumption."""
 import csv
 import json
-from filing_eval import ROOT, DIRECTORY, score
+from evaluation.filing_eval import ROOT, DIRECTORY, score
 
 directory = (*DIRECTORY, "Morgan Stanley Finance LLC", "Morgan Stanley",
              "HSBC USA Inc.", "Citigroup Global Markets Holdings Inc.", "Citigroup Inc.",
              "Royal Bank of Canada")
-records = json.loads((ROOT/"new-issuers.json").read_text(encoding="utf8"))
-with (ROOT/"new-issuer-results.csv").open("w",newline="",encoding="utf8") as f:
+records = json.loads((ROOT/"data"/"new-issuers.json").read_text(encoding="utf8"))
+with (ROOT/"results"/"new-issuer-results.csv").open("w",newline="",encoding="utf8") as f:
     w=csv.writer(f)
     w.writerow(["id","expected","exact","alias_rule"])
     for case in records:
@@ -17,7 +17,7 @@ with (ROOT/"new-issuer-results.csv").open("w",newline="",encoding="utf8") as f:
 # Each list represents issuer rows returned in reading order for a synthetic filing.
 # The requested series is B. Only the first issuer row reaches the existing scorer.
 a,b = "Royal Bank of Canada","HSBC USA Inc."
-with (ROOT/"series-stress-results.csv").open("w",newline="",encoding="utf8") as f:
+with (ROOT/"results"/"series-stress-results.csv").open("w",newline="",encoding="utf8") as f:
     w=csv.writer(f)
     w.writerow(["order","series_A_issuer","series_B_expected","first_row_result","correct"])
     for first in ["A","B"]:

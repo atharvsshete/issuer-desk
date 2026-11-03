@@ -1,6 +1,6 @@
 import unittest
-from amendments import ORIGINAL, REVISIONS, compare
-from demo import MASTER, classify
+from app.amendments import ORIGINAL, REVISIONS, compare
+from app.demo import MASTER, classify
 
 class AmendmentReview(unittest.TestCase):
     def test_three_amendments(self):

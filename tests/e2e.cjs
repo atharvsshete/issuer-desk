@@ -13,7 +13,7 @@ async function run(channel, width) {
     page.on("console", m => { if(m.type()==="error") errors.push(m.text()); });
     page.on("requestfailed", r => errors.push(r.url()));
     page.on("request", r => { if(/^https?:/.test(r.url())) errors.push(r.url()); });
-    await page.goto(pathToFileURL(path.join(__dirname,"review.html")).href);
+    await page.goto(pathToFileURL(path.join(__dirname,"..","review.html")).href);
     const sel = id => page.locator("#"+id);
     const names = {1:"Alder Funding LLC",2:"Alder Holdings Inc",4:"Alder Holdings Inc",5:"Alder Funding LLC"};
     for (const route of [0,1]) {
