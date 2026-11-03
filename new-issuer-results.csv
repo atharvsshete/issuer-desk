@@ -1,0 +1,9 @@
+id,expected,exact,alias_rule
+N1,Morgan Stanley Finance LLC,HOLD,HOLD
+N2,Morgan Stanley Finance LLC,HOLD,HOLD
+N3,HSBC USA Inc.,HOLD,HSBC USA Inc.
+N4,HSBC USA Inc.,HOLD,HOLD
+N5,Citigroup Global Markets Holdings Inc.,Citigroup Global Markets Holdings Inc.,Citigroup Global Markets Holdings Inc.
+N6,Citigroup Global Markets Holdings Inc.,HOLD,HOLD
+N7,Royal Bank of Canada,Royal Bank of Canada,Royal Bank of Canada
+N8,Royal Bank of Canada,Royal Bank of Canada,Royal Bank of Canada

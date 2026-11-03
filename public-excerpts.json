@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P1",
+    "excerpt": "Issuer: Barclays Bank PLC",
+    "expected": "Barclays Bank PLC",
+    "locator": "Final Terms, Issuer row",
+    "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010325002139/dp225053_424b2-6900ms.htm"
+  },
+  {
+    "id": "P2",
+    "excerpt": "Issuer: BofA Finance LLC (“BofA Finance”)",
+    "expected": "BofA Finance LLC",
+    "locator": "Issuer row, alias retained",
+    "url": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426013583/form424b2.htm"
+  },
+  {
+    "id": "P3",
+    "excerpt": "Issuer: Nomura America Finance, LLC (“we” or “us”)",
+    "expected": "Nomura America Finance, LLC",
+    "locator": "Terms of the Notes, Issuer row",
+    "url": "https://www.sec.gov/Archives/edgar/data/1163653/000110465926088005/tm2619530d55_424b2.pdf"
+  },
+  {
+    "id": "P4",
+    "excerpt": "The notes are unsecured senior notes issued by BofA Finance LLC",
+    "expected": "BofA Finance LLC",
+    "locator": "Cover, opening clause before alias",
+    "url": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426028520/form424b2.htm"
+  },
+  {
+    "id": "P5",
+    "excerpt": "The notes are unsecured and unsubordinated obligations of BofA Finance LLC and the related guarantees are unsecured and unsubordinated obligations of Bank of America Corporation.",
+    "expected": "BofA Finance LLC",
+    "locator": "Cover, full sentence pairing issuer and guarantor",
+    "url": "https://www.sec.gov/Archives/edgar/data/70858/000119312519326462/d859470d424b3.htm"
+  },
+  {
+    "id": "P6",
+    "excerpt": "Barclays Capital Inc. will receive commissions from the Issuer",
+    "expected": "HOLD",
+    "locator": "Cover, footnote 3, opening clause identifying distributor only",
+    "url": "https://www.sec.gov/Archives/edgar/data/312070/000110465918056600/a18-27019_48424b2.htm"
+  },
+  {
+    "id": "P7",
+    "excerpt": "The notes are being issued by BofA Finance LLC",
+    "expected": "BofA Finance LLC",
+    "locator": "Cover, issue clause before alias",
+    "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426021471/bofa-424b2.htm"
+  },
+  {
+    "id": "P8",
+    "excerpt": "the common stock of The Goldman Sachs Group, Inc.",
+    "expected": "HOLD",
+    "locator": "Cover, first reference asset in the offering description",
+    "url": "https://www.sec.gov/Archives/edgar/data/1163653/000110465926103081/tm2622023d75_424b2.pdf"
+  }
+]

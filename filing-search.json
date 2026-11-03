@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P1",
+    "url": "https://www.sec.gov/Archives/edgar/data/312070/000095010325002139/dp225053_424b2-6900ms.htm",
+    "expected": "Barclays Bank PLC",
+    "locator": "L25",
+    "row": "Issuer: Barclays Bank PLC"
+  },
+  {
+    "id": "P2",
+    "url": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426013583/form424b2.htm",
+    "expected": "BofA Finance LLC",
+    "locator": "L32",
+    "row": "Issuer: BofA Finance LLC (“BofA Finance”)"
+  },
+  {
+    "id": "P3",
+    "url": "https://www.sec.gov/Archives/edgar/data/1163653/000110465926088005/tm2619530d55_424b2.pdf",
+    "expected": "Nomura America Finance, LLC",
+    "locator": "L56@P1",
+    "row": "Issuer: Nomura America Finance, LLC (“we” or “us”)"
+  },
+  {
+    "id": "P4",
+    "url": "https://www.sec.gov/Archives/edgar/data/1682472/000191870426028520/form424b2.htm",
+    "expected": "BofA Finance LLC",
+    "locator": "L100",
+    "row": "Issuer: BofA Finance LLC (“BofA Finance”)"
+  },
+  {
+    "id": "P5",
+    "url": "https://www.sec.gov/Archives/edgar/data/70858/000119312519326462/d859470d424b3.htm",
+    "expected": "BofA Finance LLC",
+    "locator": "",
+    "row": ""
+  },
+  {
+    "id": "P6",
+    "url": "https://www.sec.gov/Archives/edgar/data/312070/000110465918056600/a18-27019_48424b2.htm",
+    "expected": "Barclays Bank PLC",
+    "locator": "L10",
+    "row": "Issuer: Barclays Bank PLC"
+  },
+  {
+    "id": "P7",
+    "url": "https://www.sec.gov/Archives/edgar/data/70858/000191870426021471/bofa-424b2.htm",
+    "expected": "BofA Finance LLC",
+    "locator": "L63",
+    "row": "Issuer: BofA Finance LLC (“BofA Finance”)"
+  },
+  {
+    "id": "P8",
+    "url": "https://www.sec.gov/Archives/edgar/data/1163653/000110465926103081/tm2622023d75_424b2.pdf",
+    "expected": "Nomura America Finance, LLC",
+    "locator": "L51@P1",
+    "row": "Issuer: Nomura America Finance, LLC (“we” or “us”)"
+  }
+]

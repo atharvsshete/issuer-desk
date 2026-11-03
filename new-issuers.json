@@ -1,0 +1,58 @@
+[
+  {
+    "id": "N1",
+    "expected": "Morgan Stanley Finance LLC",
+    "url": "https://www.sec.gov/Archives/edgar/data/895421/000183988224014145/ms1585_424b2-08503.htm",
+    "locator": "L31",
+    "row": "Issuer: Morgan Stanley Finance LLC"
+  },
+  {
+    "id": "N2",
+    "expected": "Morgan Stanley Finance LLC",
+    "url": "https://www.sec.gov/Archives/edgar/data/1666268/000095010324003863/dp208417_fwp-ps1452msfl.htm",
+    "locator": "Summary of terms combined role row",
+    "row": ""
+  },
+  {
+    "id": "N3",
+    "expected": "HSBC USA Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/83246/000110465924077216/tm2418635d17_424b2.pdf",
+    "locator": "L19",
+    "row": "Issuer: HSBC USA Inc. (“HSBC”)"
+  },
+  {
+    "id": "N4",
+    "expected": "HSBC USA Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/83246/000110465925095039/tm2524998d530_424b2.pdf",
+    "locator": "Investment description",
+    "row": ""
+  },
+  {
+    "id": "N5",
+    "expected": "Citigroup Global Markets Holdings Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/200245/000095010326009580/dp249047_fwp-us26n1701cgmh.htm",
+    "locator": "L10",
+    "row": "Issuer: Citigroup Global Markets Holdings Inc."
+  },
+  {
+    "id": "N6",
+    "expected": "Citigroup Global Markets Holdings Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/200245/000095010324011892/dp216377_fwp-us2405162cgmh.htm",
+    "locator": "Summary of terms combined role row",
+    "row": ""
+  },
+  {
+    "id": "N7",
+    "expected": "Royal Bank of Canada",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/000121465914001045/pdf_a210145424b2.pdf",
+    "locator": "L117",
+    "row": "Issuer: Royal Bank of Canada"
+  },
+  {
+    "id": "N8",
+    "expected": "Royal Bank of Canada",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000275/000121465914003119/pdf_a429141424b2.pdf",
+    "locator": "L233",
+    "row": "Issuer: Royal Bank of Canada"
+  }
+]

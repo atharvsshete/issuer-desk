@@ -1,0 +1,9 @@
+order,series_A_issuer,series_B_expected,first_row_result,correct
+A,Royal Bank of Canada,HSBC USA Inc.,Royal Bank of Canada,False
+A,HSBC USA Inc.,Royal Bank of Canada,HSBC USA Inc.,False
+A,Royal Bank of Canada,Royal Bank of Canada,Royal Bank of Canada,True
+A,HSBC USA Inc.,HSBC USA Inc.,HSBC USA Inc.,True
+B,Royal Bank of Canada,HSBC USA Inc.,HSBC USA Inc.,True
+B,HSBC USA Inc.,Royal Bank of Canada,Royal Bank of Canada,True
+B,Royal Bank of Canada,Royal Bank of Canada,Royal Bank of Canada,True
+B,HSBC USA Inc.,HSBC USA Inc.,HSBC USA Inc.,True

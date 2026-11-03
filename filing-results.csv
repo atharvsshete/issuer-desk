@@ -1,0 +1,9 @@
+filing,expected,row_found,exact,alias_experiment
+P1,Barclays Bank PLC,True,Barclays Bank PLC,Barclays Bank PLC
+P2,BofA Finance LLC,True,HOLD,BofA Finance LLC
+P3,"Nomura America Finance, LLC",True,HOLD,"Nomura America Finance, LLC"
+P4,BofA Finance LLC,True,HOLD,BofA Finance LLC
+P5,BofA Finance LLC,False,HOLD,HOLD
+P6,Barclays Bank PLC,True,Barclays Bank PLC,Barclays Bank PLC
+P7,BofA Finance LLC,True,HOLD,BofA Finance LLC
+P8,"Nomura America Finance, LLC",True,HOLD,"Nomura America Finance, LLC"

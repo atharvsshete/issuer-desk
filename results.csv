@@ -1,0 +1,14 @@
+case,expected,baseline,local_model_assisted
+01,Alder Funding LLC,Alder Funding LLC,Alder Funding LLC
+02,Alder Holdings Inc,Alder Holdings Inc,Alder Holdings Inc
+03,Alder Funding LLC,hold,hold
+04,Alder Holdings Inc,hold,Alder Holdings Inc
+05,Alder Funding LLC,hold,Alder Funding LLC
+06,hold,hold,hold
+07,hold,hold,hold
+08,hold,hold,hold
+09,hold,hold,hold
+10,hold,hold,hold
+11,hold,hold,hold
+12,Alder Funding LLC,hold,hold
+13,hold,hold,hold

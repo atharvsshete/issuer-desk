@@ -1,0 +1,9 @@
+case,expected,exact,phrase,model_assisted
+P1,Barclays Bank PLC,Barclays Bank PLC,Barclays Bank PLC,Barclays Bank PLC
+P2,BofA Finance LLC,HOLD,HOLD,HOLD
+P3,"Nomura America Finance, LLC",HOLD,HOLD,HOLD
+P4,BofA Finance LLC,HOLD,BofA Finance LLC,HOLD
+P5,BofA Finance LLC,HOLD,HOLD,HOLD
+P6,HOLD,HOLD,HOLD,HOLD
+P7,BofA Finance LLC,HOLD,BofA Finance LLC,HOLD
+P8,HOLD,HOLD,HOLD,HOLD
